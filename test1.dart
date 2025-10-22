@@ -140,6 +140,24 @@ print("Uniot ${a.union(b)}");
   Map <String , String> phonebook = {"Faridpur":"7800", "kanaipur":"7801","tambulkhana":"78002"};
   print(phonebook["Faridpur"]);
   //add direct addition
+  //.remove by just key;
+  //.containsKey(key)
+  //phonebook.containsValue()
 
+
+
+  //Loop through map
+  Map< String , int > students = {"arif":90, "Nipa":78, "Dipa":55};
+  students.forEach((name, marks)
+  {
+    print("${name} have scored ${marks}");
+  });
+
+
+  //map<key, value> to list:
+  //
+  List <String> names = students.keys.toList();
+  List <int> marks = students.values.toList();
+  print(marks);
   return 0;
 }
