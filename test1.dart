@@ -128,6 +128,11 @@ int main() {
 //map
   sett1.map((item)=>print(item)).toList();
 
+  //
+Set<int> a = {1,2,3};
+Set<int> b = {4,5,6,};
+print("Uniot ${a.union(b)}");
+
 
   return 0;
 }
