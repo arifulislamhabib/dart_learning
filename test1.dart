@@ -133,6 +133,13 @@ Set<int> a = {1,2,3};
 Set<int> b = {4,5,6,};
 print("Uniot ${a.union(b)}");
 
+//intersection
+
+
+  //map
+  Map <String , String> phonebook = {"Faridpur":"7800", "kanaipur":"7801","tambulkhana":"78002"};
+  print(phonebook["Faridpur"]);
+  //add direct addition
 
   return 0;
 }
