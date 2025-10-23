@@ -15,7 +15,6 @@ int main()
   name ??= "No name";
   print(name ?? "N/A");
 
-  a = null;
 
 return 0;
 }
