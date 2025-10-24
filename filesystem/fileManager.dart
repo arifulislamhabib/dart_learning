@@ -18,6 +18,8 @@ Future<int> main() async {
     int number = input_() as int;
     switch(number){
       case 1: await create_folder ( take_name());
+        break;
+      case 2: await create_File( take_name());
     }
 
   }while(status);
@@ -56,10 +58,27 @@ async {
     print('Folder already exists: ${directory.path}');
   } else {
 // Create the folder
-    await directory.create();
+    await directory.create(recursive: true);
     print('Folder created: ${directory.path}');
   }
 }
+
+
+Future<void> create_File(String filePath) async {
+  // Create a File object
+  final file = File(filePath);
+
+  // Check if file already exists
+  if (await file.exists()) {
+    print('File already exists: ${file.path}');
+  } else {
+    // Create the file (and write something to it)
+    await file.create(recursive: true);
+    await file.writeAsString('Hello, Dart File!');
+    print('File created: ${file.path}');
+  }
+}
+
 
 //Take an integer input
 int?  input_()
@@ -86,10 +105,15 @@ Future <dynamic>pwd_()async
 }
 
 
-//
+//Rename a file
 Future<dynamic> re_name(File f1, String new_name)
 async{
   await f1.rename("${new_name}.txt");
+}
+
+//rename a folder
+Future<dynamic> re_name_folder()async
+{
 }
 
 
