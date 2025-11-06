@@ -14,9 +14,17 @@ Future<int> main()async
 
 
   //write in the file
-  await file.writeAsString('Hello world');
+  await file.writeAsString('Hello world\n');
   print('Wrote hello world to the the file: ${file.path}');
 
+
+  //append text to the file:
+
+  await file.writeAsString("appended new line1.\n", mode: FileMode.append);
+
+
+  final content = await file.readAsString();
+  print(content);
 
   return 0 ;
 }

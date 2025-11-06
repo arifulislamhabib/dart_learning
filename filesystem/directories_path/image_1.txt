@@ -1,0 +1,10 @@
+   
+   This file is created using platformSeperator = "/"
+   
+   - the paht was build by joining:
+      - directry : /home/arif/StudioProjects/HelloTest/filesystem/directories_path
+      -file name image_1.txt
+      -result : /home/arif/StudioProjects/HelloTest/filesystem/directories_path/image_1.txt
+      
+      this approch ensures any operating system.
+   
