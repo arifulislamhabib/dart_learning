@@ -40,7 +40,5 @@ void misbehave() {
 }
 
 void main() {
-  try {
-    misbehave();
-  }
+
 }
